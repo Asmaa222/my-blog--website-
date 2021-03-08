@@ -1,0 +1,258 @@
+@charset "utf-8";
+body{
+	background-color: #f6f5f5;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+	
+ul{
+	list-style: none;
+	
+	
+}
+a{
+	text-decoration: none;
+}
+button:hover{
+    font-weight: bold;
+	background-color: purple;
+}
+section{
+	
+	display: grid;
+	grid-template-areas: 
+		   
+		       "nv nv nv"
+		       "nv nv nv"
+		      "cover cover cover"
+		      "cover cover cover"
+		      "cover cover cover"
+		      "cover cover cover" 
+		     "cover cover cover" 
+		      "cover cover cover"
+		      "cover cover cover";
+	
+		
+}
+.logo{
+	
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-weight:bold ;
+	font-size:  25px;	
+	padding: 0px 60%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#nav{
+	
+	height: 70px;
+	grid-area: nv;
+   background-color:#F4F4F4;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	box-shadow: 2px 2px 12px  5px rgba(0,0,0,20%);
+	padding: 0px 10%;
+	
+	
+}
+#nav .menu {
+	display: flex;
+	
+}
+.menu  li a{
+	font-size: 16px;
+	padding: 20px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-weight: 700;
+	color: #505050;
+	
+}
+.active:hover{
+	font-size:bold;
+	
+}
+
+.cover{
+	height: 55vh;
+	
+	grid-area: cover;
+	background-image:url(../images/9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.cover{
+	
+	padding: 60px 0px 15px 80px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	
+}
+#hello{
+	color: beige;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+#name{
+	color: beige;
+	font-size: 30px;
+	font-weight: bold;
+}
+#my{
+	color: beige;
+	font-size: 19px;
+	
+	
+}
+
+button{
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	cursor: pointer;
+	border-color: black;
+}
+button:hover{
+	color: black;
+}
+.about{
+	
+	display: grid;
+	grid-template-areas: "a a a a a a a"
+	                     
+		                 
+		                 "ph ph ph ph   me me me"
+		                 "ph ph ph ph   me me me"
+		                 "ph ph ph ph   me me me"
+		                 "ph ph ph ph   me me me"
+		                ;
+	padding: 2px;
+	height:75vh;
+	/*box-shadow: 4px 4px 12px  5px rgba(0,0,0,20%);*/
+	background-color:#F0F0F0;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+	line-height: 30px;
+}
+.about #a{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	grid-area: a;
+}
+
+
+.aboutme{
+	font-size: 18px;
+grid-area: me;
+	line-height: 20px;}
+.my-photo img{
+	
+	grid-area: ph;
+	margin: 10px 10px 10px 100px;
+}
+	
+
+.contact{
+	
+	padding: 10px;
+	height: 45vh;
+	background-color: #150F0F;
+	display: grid;
+	grid-template-areas: "h1 h1 h1"
+		                 "h1 h1 h1"
+		                 "bt bt bt"
+		                 "bt bt bt";
+	align-content: center;
+	justify-content: center;
+	
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+	
+}
+.contact #h1{ 
+	grid-area: h1;
+	color: antiquewhite;
+	font-size: 20px;
+	margin: 10px;
+	
+}
+.contact-button{
+	grid-area: bt;
+	display: flex;
+	justify-content: center;
+}
+
+.contact #contact{
+	
+	color: #000;
+	
+	width: 170px;
+	height: 40px;
+	font-size: 17px;
+	
+	margin-top: 30px;
+	
+}
+footer{
+	
+	
+	display: grid;
+	grid-template-areas: "h h h"
+		                 "p p p"
+		                 "so so so"
+		                 "cop cop cop ";
+	height: 55vh;
+	background-color: #f6f5f5;;
+	
+	justify-content: center;
+	align-content: center;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	
+}
+
+footer h1{
+    
+   color: purple;
+	grid-area: h;
+	text-align: center;
+}
+footer p{
+	grid-area: p;
+	padding: 15px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+}
+.social{
+	grid-area: so;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+.social a i{
+	
+	border-radius: 50%;
+	margin: 20px 10px;
+	
+}
+
+.copyright{
+	grid-area: cop;
+	text-align: center;
+	font-size: 15px;
+	
+}
+
+.social a:hover{
+	border-radius: 50%;
+	background-color: gray;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+

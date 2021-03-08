@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+@media(max-width:320px){
+	section{height: 76vh;
+	}
+	.menu {
+		justify-content: center;
+		
+		
+	}
+	/*.logo{
+		padding: 0px 3%;
+		
+	}*/
+	
+	/*.about{display: grid;
+		
+	grid-template-areas: "a a a a  a "
+	                     "a a a a  a "
+		                 
+		                 
+		                 "ph ph ph ph ph  "
+		                 "ph ph ph  ph ph "
+		                 "me me me me me"
+		                 "me me me me me"
+		                 
+		                 "me me me me me"
+		                 "me me me me me";
+		
+	}
+	.about #a{
+		grid-area: a;
+	}
+	.my-photo img{
+		grid-area: ph;
+	}*/
+	.aboutme{
+		/*grid-area: me;*/
+		
+	font-size: 16px;
+	
+	line-height: 15px
+
+	}
+	.my-photo img{
+	
+	margin: 10px 10px 10px 40px;
+           }
+	.aboutme{
+		line-height: 14px; font-size: 11px;
+	}
+	
+	
+	
+	.contact{
+		height: 75vh;
+		width: 100%;
+	}
+	footer h1{
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	footer p{
+		letter-spacing: 1px;
+		line-height: 20px;
+	}
+	
+	
+}
+@media(min-width:600px),(max-width:900px){
+	.logo{
+		padding: 0px 5%;
+	}
+	/*.about{
+		display: grid;
+		
+	grid-template-areas: "a a a a  a "
+	                     "a a a a  a "
+		                 
+		                 
+		                 "ph ph ph ph ph  "
+		                
+		                 
+		                 "me me me me me"
+		                 "me me me me me"
+		                 "me me me me me";
+		
+	}
+	.about #a{
+		grid-area: a;
+	}
+	.my-photo img{
+		grid-area: ph;
+	}
+	.aboutme{
+		grid-area: me;
+	
+	}*/
+	.my-photo img{
+	
+	margin: 10px 10px 10px 40px;
+           }
+	.aboutme{
+		line-height: 14px; font-size: 11px;
+	}
+	
+	footer h1{
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	footer p{
+		letter-spacing: 1px;
+		line-height: 20px;
+	}
+	#contact{
+		width: 40px;
+	}
+	/*.contact{width: 100%;}
+	footer{
+		width: 100%;
+	}
+	.about{
+		width: 100%;
+	}*/
+	
+}
+@media(min-width:901px){
+	
+}
